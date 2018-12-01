@@ -9,7 +9,7 @@ Summary: Generate dSYM with MobileVLCKit hangs the system
 - [Xcode 10] when project complied with custom framework, dsymutil causes run away memory pressure
 - [Xcode 9] Not a problem
 
-- Workaround: copy <dsymutil in Xcode9> into <dsymutil in Xcode10> will resolve the problem successfully.
+- Workaround: copy `<dsymutil in Xcode9>` into `<dsymutil in Xcode10>` will resolve the problem successfully.
 
 
 
