@@ -9,9 +9,9 @@ Summary: Generate dSYM with MobileVLCKit hangs the system
 - [Xcode 10] when project complied with custom framework, dsymutil causes run away memory pressure
 - [Xcode 9] Not a problem
 
-- Workaround: copy `<dsymutil in Xcode9>` into `<dsymutil in Xcode10>` will resolve the problem successfully.
+**- Workaround: copy `<dsymutil in Xcode9>` into `<dsymutil in Xcode10>` will resolve the problem successfully.**
 
-
+Path to dsymutil: `/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil`
 
 Steps to Reproduce:
 - Load the project [See Readme.md, https://github.com/theyongdai/simpleVLCPlayer]
@@ -28,3 +28,6 @@ Version/Build:
 
 Configuration:
 - macOS 10.14.1 (18B75)
+
+
+p.s. I compiled my `MobileVLCKit.framework` using Xcode 9 and used the framework in Xcode 10 project.
